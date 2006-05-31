@@ -1,0 +1,9 @@
+   block common_beam_direction_parameters = {
+         double MinEta = 0.429841
+         double MaxEta = 0.429841
+         double MinPhi = -0.160386
+         double MaxPhi = -0.160386
+         double BeamMeanX = 0.
+         double BeamMeanY = 0.
+         double BeamPosition = 0.
+  }
