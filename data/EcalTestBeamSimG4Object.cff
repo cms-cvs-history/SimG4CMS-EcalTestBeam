@@ -1,0 +1,21 @@
+        #
+        # ECAL test beam specific OscarProducer configuration
+
+        include "SimG4Core/Application/data/SimG4Object.cfi"
+
+        replace SimG4Object.UseMagneticField = false
+        replace SimG4Object.Physics.DefaultCutValue  = 1.
+        replace SimG4Object.Generator        =
+          {
+           bool ApplyPtCuts = false
+           bool ApplyEtaCuts = true
+           bool ApplyPhiCuts = false
+           double MinPhiCut = 0.   # in degrees,
+           double MaxPhiCut = 360. # internally converted to radians, (-pi,pi) range accounted for
+           double MinEtaCut = 0.
+           double MaxEtaCut = 1.5
+           double MinPtCut = 1.
+           double MaxPtCut = 999999.
+           untracked int32 Verbosity = 0
+          }
+          replace SimG4Object.CaloTrkProcessing.TestBeam = true
