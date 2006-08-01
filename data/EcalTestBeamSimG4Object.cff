@@ -3,9 +3,9 @@
 
         include "SimG4Core/Application/data/SimG4Object.cfi"
 
-        replace SimG4Object.UseMagneticField = false
-        replace SimG4Object.Physics.DefaultCutValue  = 1.
-        replace SimG4Object.Generator        =
+        replace g4SimHits.UseMagneticField = false
+        replace g4SimHits.Physics.DefaultCutValue  = 1.
+        replace g4SimHits.Generator        =
           {
            bool ApplyPtCuts = false
            bool ApplyEtaCuts = true
@@ -18,4 +18,4 @@
            double MaxPtCut = 999999.
            untracked int32 Verbosity = 0
           }
-          replace SimG4Object.CaloTrkProcessing.TestBeam = true
+          replace g4SimHits.CaloTrkProcessing.TestBeam = true
