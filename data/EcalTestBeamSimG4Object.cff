@@ -10,12 +10,12 @@
            bool ApplyPtCuts = false
            bool ApplyEtaCuts = true
            bool ApplyPhiCuts = false
-           double MinPhiCut = 0.   # in degrees,
-           double MaxPhiCut = 360. # internally converted to radians, (-pi,pi) range accounted for
+           double MinPhiCut = -3.14159265358979323846 # in radians
+           double MaxPhiCut = 3.14159265358979323846 # according to CMS conventions
            double MinEtaCut = 0.
            double MaxEtaCut = 1.5
-           double MinPtCut = 1.
-           double MaxPtCut = 999999.
+           double MinPtCut = 0.001
+           double MaxPtCut = 99999.
            untracked int32 Verbosity = 0
           }
           replace g4SimHits.CaloTrkProcessing.TestBeam = true
