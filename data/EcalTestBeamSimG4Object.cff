@@ -23,4 +23,3 @@
            untracked int32 Verbosity = 0
           }
           replace g4SimHits.CaloTrkProcessing.TestBeam = true
-          replace g4SimHits.Physics.type = "SimG4Core/Physics/QGSP"
