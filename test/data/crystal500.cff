@@ -5,5 +5,5 @@
          untracked double MaxPhi = -0.160386
          untracked double BeamMeanX = 0.
          untracked double BeamMeanY = 0.
-         untracked double BeamPosition = 0.
+         untracked double BeamPosition = -26733.5
   }
