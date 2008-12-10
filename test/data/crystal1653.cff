@@ -1,9 +1,0 @@
-block common_beam_direction_parameters = {
-  untracked double MinEta = 1.43959
-  untracked double MaxEta = 1.43959
-  untracked double MinPhi = -0.0409663 
-  untracked double MaxPhi = -0.0409663 
-  untracked double BeamMeanX = 0.
-  untracked double BeamMeanY = 0.
-  untracked double BeamPosition = -26733.5
-}
